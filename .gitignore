@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+.terraform
+!.terraform.lock.hcl
+kubeconfig*
+terraform.tfstate*
+terraform.tfvars
