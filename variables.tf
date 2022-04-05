@@ -11,6 +11,16 @@ variable "cluster_name" {
   type = string
 }
 
+variable "cluster_endpoint_public_access" {
+  type = bool
+  default = false
+}
+
+variable "cluster_endpoint_public_access_cidrs" {
+  type = list(string)
+  default = ["0.0.0.0/0"]
+}
+
 variable "k8s_version" {
   default = "1.21"
   type = string
