@@ -41,7 +41,8 @@ module "eks" {
   cluster_endpoint_private_access = true
   cluster_endpoint_private_access_cidrs = var.management_cidrs
   cluster_create_endpoint_private_access_sg_rule = true
-  cluster_endpoint_public_access = false
+  cluster_endpoint_public_access = var.cluster_endpoint_public_access #false
+  cluster_endpoint_public_access_cidrs = var.cluster_endpoint_public_access_cidrs
 
   enable_irsa = true
 
