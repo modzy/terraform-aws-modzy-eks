@@ -6,7 +6,8 @@ locals {
   }
   cluster_autoscaler_version_map = {
     "1.19" = "v1.19.1"
-    "1.21"  = "v1.21.1"
+    "1.21" = "v1.21.1"
+    "1.22" = "v1.22.1"
   }
 }
 
